@@ -198,8 +198,18 @@ header #logotipo {
 	display: block;
 }
 #call-to-action {
+	margin-top: 96px;
 	text-align: center;
 	font-family: 'Poppins-ExtraLight';
+}
+#call-to-action-video{
+margin-top: 100px;
+margin-left: 89px;
+}
+#call-to-action-video h2 {
+	margin-top: 66px;
+    margin-bottom: 35px;
+    margin-left: -119px;
 }
 #call-to-action h1 {
 	color: #5C2D90;
@@ -274,11 +284,6 @@ footer .footer-black label{
 
 #logofama{
 	width: 386px;	
-}
-
-
-#call-to-action{
-	margin-top: 96px;
 }
 
 body {
