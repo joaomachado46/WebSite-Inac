@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width:device-width, initial-scale=1">
+			<title>INAC</title>
+			<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+			<link rel="stylesheet" href="css/orlando.css">
+			<link rel="stylesheet" href="css/orlando-mobile.css">
+
+		</head>
+		<body>
+
+			<header>
+				<div id="menu-mobile-mask" class="visible-xs"></div>
+				<div id="search-btn">
+					<input type="text" id="search-mobile" placeholder="search...">
+				</div>
+				<div id="menu-mobile" class=>
+					<img id="logotipo2" src="img/inac.png" alt="Logotipo">
+					<ul>
+						<li><a href="index.html">HOME</a></li>
+						<li><a href="#">INAC</a></li>
+						<li><a href="#">FORMAÇÃO</a></li>
+						<li><a href="#">RESIDÊNCIAS</a></li>
+						<li><a href="#">CIRCO E INCLUSÃO</a></li>
+						<li><a href="#">PLATAFORMA ARTÍSTICA</a></li>
+						<li><a href="videos.html">Videos</a></li>
+						<li><a href="#">AGENDA</a></li>
+						<li><a href="#">CONTACTOS</a></li>
+					</ul>
+
+					<div id="closeMenuMobile">
+						<button href="#" id="closeX" type="button" class="fa fa-close"> </button>
+					</div>
+				</div>
+				
+				<div class="container">
+					<img id="logotipo" src="img/inac.png" alt="Logotipo">
+				</div>
+				<div class="header-black">
+						<div class="header-black">
+						<button id="btn-bars" type="button" class="fa fa-bars"></button>
+						<button id="btn-search" type="button" class="fa fa-search"></button>	
+				</div>	
+				</div>
+				
+				<div class="container">
+					
+					<div class="row">
+						<nav id="menu" class="pull-right">
+								<ul>
+									<li><a href="index.html">HOME</a></li>
+									<li><a href="#">INAC</a></li>
+									<li><a href="#">FORMAÇÃO</a></li>
+									<li><a href="#">RESIDÊNCIAS</a></li>
+									<li><a href="#">CIRCO E INCLUSÃO</a></li>
+									<li><a href="#">PLATAFORMA ARTÍSTICA</a></li>
+									<li><a href="videos.html">Videos</a></li>
+									<li><a href="#">AGENDA</a></li>
+									<li><a href="#">CONTACTOS</a>
+									<li class="search" id="input-search">
+									<div class="input-group">
+								      <input type="search" placeholder="search" id="butao" >
+								      <span class="input-group-btn">
+								        <button type="button"><i class="fa fa-search"></i></button>
+								      </span>
+								    </div><!-- /input-group -->
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>			
+			</header>
+
+		<section>
+			
+			<div id="call-to-action-video">
+				
+				<div class="container">
+
+					<div class="row text-center">
+						<h2>Videos</h2>
+							<video id="videoinac" src="mp4/The most international school in Portugal INAC.mp4" controls=""></video>
+					</div>
+
+					<div class="row">
+						
+						
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</section>
+
+		<footer>
+				<div class="footer-grey">
+					<div class="container">
+						<div class="row">
+							<div class="col-xs-6">
+								<img src=img/vine.png>
+								<img src=img/youtube.png>
+								<img src=img/instagram.png>
+								<img src=img/facebook.png>
+								<p><i class="fa fa-envelope"> Email: geral@inac.com.pt</i><br>
+								<p><i class="fa fa-phone">Telefones: (00351) 937542669 / 914433123 / 966303219.</i></p>
+								<address>
+									<i class="fa fa-map-marker">
+								Morada: Lugar do Xisto, 4760-727 Ribeirão, Vila Nova de Famalicão A24 e B33 Lago Discount</i></address>
+							</div>
+							<div class="col-xs-6">
+								<img id="logofama" src="img/fama.png">
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<div class="footer-black">
+					<div class="container">
+						<label>©2017 INAC Instituto Nacional De Artes do Circo, todos os direitos reservados.</label>
+						<ul class="pull-right">
+						<label>Apoios:</label>  
+							<a href="https://www.argatintas.pt/pt"><img id="arga" src="img/arga3.png" alt="arga"></a> 
+							<a href="https://www.beltraocoelho.pt/"><img id="beltrao" src="img/Logo_Beltrão_Coelho.png" alt="beltrao"></a>
+							<a href="https://circos.com.pt/"><img id="circus" src="img/circus.png" alt="circus"></a>
+							<a href="https://www.henrys-online.de/en/shop/juggling/juggling-clubs/?p=1"><img id="henrys" src="img/henrys.png" alt="henrys"></a>
+							<a href="https://www.lagodiscount.pt/"><img id="lago" src="img/lago.png" alt="lago"></a>
+						</ul>
+					</div>
+				</div>	
+			</footer>
+
+			<script src="lib/jquery/jquery.min.js"></script>
+			<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+			<script src="js/efeitos.js"></script>
+			<script>
+				$(document).ready(function(){
+				
+					$("#logotipo").on("mouseover", function(){
+
+						$("#menu li").addClass("efeito"); 
+
+					}).on("mouseout", function(){
+
+						$("#menu li").removeClass("efeito");
+
+					});
+
+					$("#butao").on("focus", function(){
+
+						$("#input-search").addClass("activo");
+
+					}).on("blur",function(){
+
+						$("#input-search").removeClass("activo");
+					})		
+				});
+			</script>
+		</body>
+	</html>
